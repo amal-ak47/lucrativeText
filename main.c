@@ -1,3 +1,6 @@
+// lucrativeText - A lightweight terminal text editor
+// Licensed under CC BY-NC 4.0 — free for personal use, no commercial use
+
 #include <ncurses.h>
 #include <string.h>
 #include <stdio.h>
@@ -146,8 +149,30 @@ void delete_selection(int sr, int sc, int er, int ec)
 
 int main(int argc, char* argv[])
 {
+    if(argc == 2 && strcmp(argv[1], "--version") == 0) {
+        printf("lucrativeText 1.0.0\n");
+        return 0;
+    }
+    if(argc == 2 && strcmp(argv[1], "--help") == 0) {
+        printf("Usage: lucrativeText [filename]\n\n");
+        printf("Keybindings:\n");
+        printf("  Ctrl+X       Save\n");
+        printf("  Ctrl+E       Exit\n");
+        printf("  Ctrl+W       Close without saving\n");
+        printf("  Ctrl+U       Undo\n");
+        printf("  Ctrl+D       Delete line\n");
+        printf("  Ctrl+K       Cut\n");
+        printf("  Ctrl+G       Copy\n");
+        printf("  Ctrl+P       Paste\n");
+        printf("  Ctrl+N       Toggle line numbers\n");
+        printf("  Shift+Arrow  Select text\n");
+        printf("  Option+Arrow Jump word\n");
+        printf("  Tab          Indent 4 spaces\n");
+        printf("  Shift+Tab    Unindent\n");
+        return 0;
+    }
     if(argc != 2) {
-        printf("Usage: %s <filename>\n", argv[0]);
+        printf("Usage: lucrativeText <filename>\n");
         return 1;
     }
 
