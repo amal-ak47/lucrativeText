@@ -215,7 +215,7 @@ int main(int argc, char* argv[])
     int status_timer = 0;
 
     int show_gutter = 1;
-    char* headerMiddleText = "AK Editor";
+    char* headerMiddleText = "lucrativeText Editor";
 
     while(1)
     {
