@@ -27,14 +27,14 @@ A fast, lightweight terminal text editor for Linux and macOS — built in C with
 ### Homebrew (macOS + Linux) — recommended
 
 ```bash
-brew tap YOURUSERNAME/lucrativeText
-brew install lucrativeText
+brew tap amal-ak47/lucrativetext
+brew install lucrativetext
 ```
 
 ### Build from source
 
 ```bash
-git clone https://github.com/YOURUSERNAME/lucrativeText
+git clone https://github.com/amal-ak47/lucrativeText
 cd lucrativeText
 make install
 ```
@@ -54,7 +54,7 @@ make install
 
 ```bash
 brew update
-brew upgrade lucrativeText
+brew upgrade lucrativetext
 ```
 
 ### Built from source
@@ -72,8 +72,8 @@ make install
 ### Homebrew
 
 ```bash
-brew uninstall lucrativeText
-brew untap YOURUSERNAME/lucrativeText
+brew uninstall lucrativetext
+brew untap amal-ak47/lucrativetext
 ```
 
 ### Built from source
